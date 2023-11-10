@@ -1,4 +1,39 @@
-.form-box{
-border: 2px solid black;
-padding: 20px;
+.form-box {
+    border: 2px solid black;
+    padding: 20px;
 }
+
+
+
+/* NAV BAR */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.title-box {
+    border: 2px solid black;
+}
+
+
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#credits {
+    display: flex;
+    justify-content: center;
+}
+
+
