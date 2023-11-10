@@ -1,3 +1,4 @@
+
 .video-screen-container {
     border-style: solid;
     border-color: black;
@@ -39,4 +40,9 @@
     justify-self: center;
     align-self: center;
     margin-top: 1%
+
+.form-box{
+border: 2px solid black;
+padding: 20px;
+b1a2d4f443e743f159bbc940257ede5bb6873eee
 }
