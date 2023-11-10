@@ -39,4 +39,8 @@
     justify-self: center;
     align-self: center;
     margin-top: 1%
+
+.form-box{
+border: 2px solid black;
+padding: 20px;
 }
