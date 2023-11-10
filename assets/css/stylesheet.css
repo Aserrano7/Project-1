@@ -1,0 +1,42 @@
+.video-screen-container {
+    border-style: solid;
+    border-color: black;
+    height: 80vh;
+    margin: 3% 8% 5% 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-video-button {
+    padding: 2%;
+}
+
+.hidden {
+    display: none;
+}
+
+.youtube-video-and-link-container {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width:100%;
+}
+
+.youtube-screen {
+    border-style: solid;
+    border-color: black;
+    height: 70vh;
+    width:100%;
+    flex:;
+}
+
+.link-to-youtube-website {
+    padding: 2%;
+    border-style: solid;
+    border-color: black;
+    justify-self: center;
+    align-self: center;
+    margin-top: 1%
+}
