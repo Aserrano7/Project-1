@@ -64,3 +64,14 @@ saveBtn.addEventListener('click', function (event) {
 
         });
 })
+
+var titleBox = document.querySelector('.title-box');
+var startBtn = document.querySelector('#start-btn');
+var formBox = document.querySelector('.form-box')
+
+function hideTitleBox() {
+    titleBox.style.display = 'none';
+    formBox.style.display = 'flex';
+}
+
+startBtn.addEventListener('click', hideTitleBox);

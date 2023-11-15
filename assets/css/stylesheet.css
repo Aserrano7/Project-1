@@ -1,4 +1,4 @@
-/* NAV BAR */
+/* NAV BAR SECTION */
 .nav-bar {
     display: flex;
     justify-content: center;
@@ -10,26 +10,30 @@
     gap: 2rem;
 }
 
-
+/* TITLE SECTION */
 .title-box {
-    border: 2px solid black;
-}
-
-
-
-.title-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: 2px solid black;
 }
+
 
 #credits {
     display: flex;
     justify-content: center;
 }
 
+/* FORM SECTION */
+.form-box {
+    display: none;
+    border: 2px solid black;
+    padding: 20px;
+}
 
+
+/* DISPLAY WORKOUTS/EXCERCISES SECTION */
 .video-screen-container { 
     border-color: black;
     height: 80vh;
@@ -69,45 +73,4 @@
     justify-self: center;
     align-self: center;
     margin-top: 1%
-}
-
-.form-box{
-    border: 2px solid black;
-    padding: 20px;
-}
-
-.play-video-button {
-    padding: 2%;
-}
-
-.hidden {
-    display: none;
-}
-
-.youtube-video-and-link-container {
-    display: flex;
-    flex-direction: column;
-    height: 70vh;
-    width:100%;
-}
-
-.youtube-screen {
-    border-style: solid;
-    border-color: black;
-    height: fit-content;
-    width:100%;
-}
-
-.link-to-youtube-website {
-    padding: 2%;
-    border-style: solid;
-    border-color: black;
-    justify-self: center;
-    align-self: center;
-    margin-top: 1%
-}
-
-.form-box{
-    border: 2px solid black;
-    padding: 20px;
 }
