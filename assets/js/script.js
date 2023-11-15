@@ -10,6 +10,24 @@ saveBtn.addEventListener('click', function(event){
     var diff=document.getElementById("difficultyE")
     console.log(diff.value);
 
+
+    if (type.value === "all") {
+        type.value = "";
+    }
+    if (muscle.value === 'all') {
+        muscle.value = '';
+    }
+    if (diff.value === 'all') {
+        diff.value = "";
+    }
+    var userInput = {
+        type: type.value,
+        muscle: muscle.value,
+        difficulty: diff.value,
+    }
+    console.log(userInput);
+
+
 if(type.value==='all' && muscle.value==='all' && diff.value==='all' ){
 
 var url = 'https://api.api-ninjas.com/v1/exercises?';
@@ -53,4 +71,3 @@ fetch(url, {
 
 
 })
-
