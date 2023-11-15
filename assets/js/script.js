@@ -10,6 +10,7 @@ saveBtn.addEventListener('click', function(event){
     var diff=document.getElementById("difficultyE")
     console.log(diff.value);
 
+
     if (type.value === "all") {
         type.value = "";
     }
@@ -25,6 +26,7 @@ saveBtn.addEventListener('click', function(event){
         difficulty: diff.value,
     }
     console.log(userInput);
+
 
 if(type.value==='all' && muscle.value==='all' && diff.value==='all' ){
 
@@ -69,5 +71,3 @@ fetch(url, {
 
 
 })
-
-
