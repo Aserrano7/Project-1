@@ -1,4 +1,6 @@
+
 /*   NAV BAR  */
+
 .nav-bar {
     display: flex;
     justify-content: center;
@@ -10,28 +12,31 @@
     gap: 2rem;
 }
 
-
+/* TITLE SECTION */
 .title-box {
-    border: 2px solid black;
-}
-
-
-
-.title-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: 2px solid black;
 }
+
 
 #credits {
     display: flex;
     justify-content: center;
 }
 
+/* FORM SECTION */
+.form-box {
+    display: none;
+    border: 2px solid black;
+    padding: 20px;
+}
 
-.video-screen-container {
-    
+
+/* DISPLAY WORKOUTS/EXCERCISES SECTION */
+.video-screen-container { 
     border-color: black;
     height: 80vh;
     margin: 3% 8% 5% 8%;
@@ -71,6 +76,7 @@
     align-self: center;
     margin-top: 1%
 }
+
 
 .form-box{
     border: 2px solid black;
