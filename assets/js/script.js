@@ -3,6 +3,8 @@ var apiKeyExcercise = "QzUuvPoamyqc5YGXvPJpCw==pAl5Dfme18ylrDTm";
 var youtubeApiKey = 'AIzaSyCNLgdkxpJPBtr-m0efxMtZYEuR3KR-GHc';
 var display = document.getElementById('display');
 
+
+
 var urlArray = [];
 
 var saveBtn = document.getElementById('saveButton');
@@ -13,11 +15,13 @@ saveBtn.addEventListener('click', function (event) {
     var muscle = document.getElementById("muscleE");
     var diff = document.getElementById("difficultyE");
 
+
     var userInput = {
         type: type.value,
         muscle: muscle.value,
         difficulty: diff.value,
     }
+
     console.log(userInput)
    // url is for fetch request to exercise API
     var url = 'https://api.api-ninjas.com/v1/exercises?type=' + userInput.type + '&muscle=' + userInput.muscle + "&difficulty=" + userInput.difficulty;
@@ -83,6 +87,7 @@ saveBtn.addEventListener('click', function (event) {
 var titleBox = document.querySelector('.title-box');
 var startBtn = document.querySelector('#start-btn');
 var formBox = document.querySelector('.form-box')
+
 
 
 
