@@ -227,5 +227,15 @@ select {
 
     .youtube-video-and-link-container {
         height: auto;
+    }
 }
+
+.underline{
+    text-decoration: underline;
+    font-weight: bold;
+    padding:10px;
+}
+.font{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
 }
