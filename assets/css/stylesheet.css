@@ -1,56 +1,147 @@
-/*   NAV BAR  */
+body, h1, h2, p, ul, li, button, select {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #a3b18a;
+    color: #333;
+}
+
+/* NAV BAR */
 .nav-bar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+}
+
+#logo {
+    font-size: 1.5rem;
 }
 
 #nav-links {
+    list-style: none;
     display: flex;
     gap: 2rem;
 }
 
-/* TITLE SECTION */
-.title-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 2px solid black;
+#nav-links li {
+    cursor: pointer;
 }
 
+#nav-links li:hover {
+    text-decoration: underline;
+}
+
+/* TITLE BOX */
+.title-box {
+    border: 2px solid #333;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: #fefae0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title-container {
+    text-align: center;
+}
+
+#title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+#description {
+    font-size: 1rem;
+    color: #555;
+}
+
+#start-btn {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#start-btn:hover {
+    background-color: #555;
+}
 
 #credits {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+    color: #555;
 }
 
-/* FORM SECTION */
+/* FORM BOX */
 .form-box {
-    display: none;
-    border: 2px solid black;
-    padding: 20px;
+    border: 2px solid #333;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: #fefae0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+form h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
 
-/* DISPLAY WORKOUTS/EXCERCISES SECTION */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#saveButton {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#saveButton:hover {
+    background-color: #555;
+}
+
+/* VIDEO SCREEN CONTAINER */
 .video-screen-container {
-    border-color: black;
-    height: 80vh;
-    margin: 3% 8% 5% 8%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin: 1rem;
+    overflow: hidden;
+    background-color: #fefae0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .play-video-button {
-    padding: 2%;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.hidden {
-    display: none;
+.play-video-button:hover {
+    background-color: #555;
 }
 
 .youtube-video-and-link-container {
@@ -61,22 +152,93 @@
 }
 
 .youtube-screen {
-    border-style: solid;
-    border-color: black;
-    height: fit-content;
-    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    background-color: #fefae0;
+    overflow-y: auto;
 }
 
 .link-to-youtube-website {
-    padding: 2%;
-    border-style: solid;
-    border-color: black;
-    justify-self: center;
-    align-self: center;
-    margin-top: 1%
+    padding: 1rem;
+    border: 2px solid #333;
+    margin-top: 1%;
+    text-align: center;
+    background-color: aliceblue;
+    cursor: pointer;
 }
 
-.form-box {
-    border: 2px solid black;
-    padding: 20px;
+.link-to-youtube-website:hover {
+    background-color: #f0f8ff;
+}
+
+/* MISCELLANEOUS */
+.center {
+    text-align: center;
+}
+
+.bold {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.video-thumbnail {
+    height: fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    
+    }
+#selection {
+    color: blue;
+}
+
+#display a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+#display a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+/* RESPONSIVENESS */
+@media only screen and (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #nav-links {
+        margin-top: 1rem;
+    }
+
+    .nav-bar h1 {
+        margin-bottom: 1rem;
+    }
+
+    .title-box,
+    .form-box,
+    .video-screen-container {
+        margin: 1rem 0;
+    }
+
+    .youtube-video-and-link-container {
+        height: auto;
+    }
+}
+
+.underline{
+    text-decoration: underline;
+    font-weight: bold;
+    padding:10px;
+}
+.font{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
 }
