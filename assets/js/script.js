@@ -111,3 +111,17 @@ saveBtn.addEventListener('click', function (event) {
             console.error('Error:', error);
         });
 });
+
+
+var titleBox = document.querySelector('.title-box');
+var startBtn = document.querySelector('#start-btn');
+var formBox = document.querySelector('.form-box')
+
+function hideTitleBox() {
+    formBox.classList.remove("hidden");
+}
+
+
+startBtn.addEventListener('click', hideTitleBox);
+
+

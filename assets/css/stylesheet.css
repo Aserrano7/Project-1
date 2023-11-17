@@ -204,6 +204,9 @@ select {
     text-decoration: underline;
 }
 
+.hidden {
+    display: none;
+}
 /* RESPONSIVENESS */
 @media only screen and (max-width: 768px) {
     .nav-bar {
