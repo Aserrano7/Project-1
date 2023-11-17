@@ -1,6 +1,6 @@
 
 var apiKeyExcercise = "QzUuvPoamyqc5YGXvPJpCw==pAl5Dfme18ylrDTm";
-var youtubeApiKey = 'AIzaSyCNLgdkxpJPBtr-m0efxMtZYEuR3KR-GHc';
+var youtubeApiKey = 'AIzaSyBTxzP3bulR4liI5qm-yTRJMFQGRlku4b8';
 var display = document.getElementById('display');
 
 var urlArray = [];
@@ -46,7 +46,7 @@ saveBtn.addEventListener('click', function (event) {
                 muscle.textContent = "muscle: " + data[index].muscle;
                 equipment.textContent = "equipment: " + data[index].equipment;
                 instructions.textContent = "instruction: " + data[index].instructions;
-                button.textContent = "Button";
+                button.textContent = "Link";
                 display.append(name, type, muscle, equipment, instructions, button);
 
                 var url2 = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=' + data[index].name + '&type=video&key=' + youtubeApiKey;
@@ -72,6 +72,7 @@ saveBtn.addEventListener('click', function (event) {
 
                             buttonElement.setAttribute("href", videoUrl);
                             buttonElement.setAttribute('target', '_blank');
+                            buttonElement.setAttribute("class","youtube-link-button-class")
                         }
                     });
                 })
