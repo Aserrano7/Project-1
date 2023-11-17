@@ -33,7 +33,7 @@
     <!-- FORM SECTION -->
     <form class="form-box">
         <h1>Choose your workout</h1>
-        <label for="type">Choose a Exercise type:</label>
+        <label for="type" class="label">Choose a Exercise type:</label>
         <select name="type" id="typeE">
             <option value="">All</option>
             <option value="cardio">Cardio</option>
@@ -45,7 +45,7 @@
             <option value="strongman">Strong Man</option>
         </select>
 
-        <label for="muscle">Choose a Muscle Group</label>
+        <label for="muscle" class="label">Choose a Muscle Group</label>
         <select name="muscle" id="muscleE">
             <option value="">All</option>
             <option value="abdonminals">Abdominals</option>
@@ -77,11 +77,9 @@
         <input id="saveButton" type="submit" value="Submit">
     </form>
     <!-- WORKOUT/EXCERCISE SECTION -->
-    <div class="video-screen-container" id="video-screen-container">
-        <button data-state="show" class="play-video-button hidden" id="play-video-button"> Play Video Button </button>
-        <div data-state="hidden" class="youtube-video-and-link-container" id="">
+    <div class="video-screen-container" id="">
+        <div class="excercise-content-and-youtube-link-container" id="">
             <div class="youtube-screen" id="display"></div>
-            <button class="link-to-youtube-website" id=""> A button or link to redirect to the youtube website</button>
         </div>
     </div>
 

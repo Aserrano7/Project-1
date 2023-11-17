@@ -9,10 +9,9 @@ var saveBtn = document.getElementById('saveButton');
 saveBtn.addEventListener('click', function (event) {
     event.preventDefault();
     var type = document.getElementById('typeE');
-
     var muscle = document.getElementById("muscleE");
     var diff = document.getElementById("difficultyE");
-
+// object for debugging
     var userInput = {
         type: type.value,
         muscle: muscle.value,
@@ -53,12 +52,17 @@ saveBtn.addEventListener('click', function (event) {
                 var url2 = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=' + data[index].name + '&type=video&key=' + youtubeApiKey;
                 urlArray.push(url2);
             }
+                   // urlArray is an array consists of 10 items of assembled URl ready for youtube API fetch call
+                   // requests is a new array created by .map() method and functions like doing a (for loop) to the new array and use each items in the array as url to use to request for youtube API
 
                     var requests = urlArray.map(function (url) {
                         return fetch(url).then(response => response.json());
                     });
-
+                    // console.log(requests);
+                    // promise.all method turns all items in the "requests" array into promises, once all the promises are fullfill then it will start
+                    // to do what is after the .then( . This ensures that every button will get a href link.
                     Promise.all(requests).then(function (results) {
+                       // console.log(results)
                         for (let index = 0; index < results.length; index++) {
                             var buttonElement = document.getElementById('btn-' + index);
 
