@@ -52,3 +52,7 @@ N/A
 ## Tests
 
 N/A
+
+## Deployed Application
+Deployed : https://aserrano7.github.io/iExercise/
+GitHub repo :  https://github.com/Aserrano7/iExercise
