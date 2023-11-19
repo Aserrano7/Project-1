@@ -92,7 +92,7 @@ saveBtn.addEventListener('click', function (event) {
                 instructions.textContent = data[index].instructions;
                 instructions.classList.add('center', 'font');
 
-                button.textContent = "ClicK Here To See Video";
+                button.textContent = "Click Here To See Video";
                 button.classList.add('center');
 
                 favorites.textContent = "Save this video to your favorites";

@@ -18,10 +18,13 @@ N/A
 
 1.Click the "Start your Workout!" button to access exercise options.
 ![This is a screenshot of the whole webpage](./assets/images/1.JPG)
+
 2.Choose the exercise type, muscle group, and difficulty level.
 ![This is a screenshot of the whole webpage](./assets/images/2.JPG)
+
 3.Click the "Submit" button to retrieve exercise information and related YouTube videos.
 ![This is a screenshot of the whole webpage](./assets/images/3.JPG)
+
 4.For each exercise, click "Click Here To See Video" to watch the associated YouTube video.
 5.Click "Save this video to your favorites" to add the video to your favorites list.
 6.To view your favorite videos, click on the "Favorites" link in the navigation bar.
