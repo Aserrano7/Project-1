@@ -2,57 +2,53 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+Motivation: The motivation behind building iExercise was to create a user-friendly web application that allows users to explore and save exercise videos based on different criteria such as exercise type, muscle group, and difficulty level.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+Why: The goal was to provide users with a tool that makes it easy to find workout routines tailored to their preferences and save their favorite exercise videos for quick access.
 
-## Table of Contents (Optional)
+Problem it Solves: iExercise addresses the challenge of discovering relevant exercise videos by integrating external APIs to fetch exercise information and corresponding YouTube videos. It simplifies the process of finding and saving workout routines.
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+What I Learned: During the development of iExercise, I gained experience in working with external APIs, managing data dynamically, and enhancing the user experience with interactive features.
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
-## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-
+## Table of Contents
+N/A
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-![alt text](assets/images/screenshot.png)
+1.Click the "Start your Workout!" button to access exercise options.
+2.Choose the exercise type, muscle group, and difficulty level.
+3.Click the "Submit" button to retrieve exercise information and related YouTube videos.
+4.For each exercise, click "Click Here To See Video" to watch the associated YouTube video.
+5.Click "Save this video to your favorites" to add the video to your favorites list.
+6.To view your favorite videos, click on the "Favorites" link in the navigation bar.
+![This is a screenshot of the whole webpage](./assets/images/1.JPG)
+![This is a screenshot of the whole webpage](./assets/images/2.JPG)
+![This is a screenshot of the whole webpage](./assets/images/3.JPG)
+![This is a screenshot of the whole webpage](./assets/images/4.JPG)
 
 ## Credits
+Contributors:
 
-List your collaborators, if any, with links to their GitHub profiles.
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-If you followed tutorials, include links to those here as well.
+Andres-Aserrano7
+Yilun-ylf456
+AJ-lifewawj
+
+Third-party assets:
+YouTube API: https://developers.google.com/youtube/v3/getting-started
+Exercise API: https://api-ninjas.com/api/exercises
 
 ## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
----
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
+N/A
 ## Badges
-
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-Badges aren't necessary, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
+N/A
 ## Features
-
-If your project has a lot of features, list them here.
-
+Browse exercise options by type, muscle group, and difficulty.
+View exercise details, including type, muscle group, equipment needed, and instructions.
+Watch related YouTube videos for each exercise.
+Save favorite videos for quick access.
 ## How to Contribute
 
-If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+N/A
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+N/A
