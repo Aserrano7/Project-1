@@ -13,9 +13,7 @@
         <div class="nav-bar">
             <h1 id="logo">iExercise</h1>
             <ul id="nav-links">
-                <li>About</li>
-                <li>Workout</li>
-                <li>Credits</li>
+                <li id="returnfav">Favorites</li>
             </ul>
         </div>
     </section>
@@ -43,8 +41,8 @@
             <option value="stretching-typeE">Stretching</option>
             <option value="strongman-typeE">Strong Man</option>
 
-            <option disabled selected id="selection" >Choose a Muscle Group</option>
-          
+            <option disabled selected id="selection">Choose a Muscle Group</option>
+
             <option value="abdonminals-muscleE">Abdominals</option>
             <option value="abductors-muscleE">Abductors</option>
             <option value="adductors-muscleE">Adductors</option>
@@ -74,22 +72,27 @@
         <input id="saveButton" type="submit" value="Submit">
     </form>
 
-    <div class="video-screen-container" id="video-screen-container">
+    <div class="video-screen-container hidden" id="video-screen-container">
         <div data-state="hidden" class="youtube-video-and-link-container" id="">
             <div class="youtube-screen" id="display"></div>
 
         </div>
     </div>
 
-    <div>
-        <span>Favorite List</span>
-        <ul id="FavoriteUlEl"></ul>
-        
+    <div id="list" class="hidden">
+        <span>Favorites</span>
+
+    </div>
+    <div class="buttonC">
+        <button id="clearList" class="hidden">Clear</button>
+        <button id="return" class="hidden">Go Home</button>
+
     </div>
 
-    <button id="clear-fav">clear favlist</button>
+
 
     <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>
