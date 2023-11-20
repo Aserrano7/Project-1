@@ -37,7 +37,7 @@ Andres "Aserrano7" https://github.com/Aserrano7
 Yilun "ylf456" https://github.com/ylf456
 
 
-AJ "lifewawj" https://github.com/ylf456
+AJ "lifewawj" https://github.com/lifewawj
 
 Third-party assets:
 YouTube API: https://developers.google.com/youtube/v3/getting-started
