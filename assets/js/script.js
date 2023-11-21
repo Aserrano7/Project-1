@@ -14,7 +14,7 @@ var saveBtn = document.getElementById('saveButton');
 
 
 saveBtn.addEventListener('click', function (event) {
-    objectArray = [];
+    // objectArray = [];
     console.log("submit button clicked");
     event.preventDefault();
     videoContainer.classList.remove('hidden')
@@ -121,7 +121,7 @@ saveBtn.addEventListener('click', function (event) {
             // to do what is after the .then( . This ensures that every button will get a href link.
             Promise.all(requests).then(function (results) {
                 for (let index = 0; index < results.length; index++) {
-                    //  console.log(results[index]);
+                      console.log(results[index]);
                     var buttonElement = document.getElementById('btn-' + index);
                     var thumbnailImg = document.getElementById('img-' + index)
                     var item = results[index].items;
