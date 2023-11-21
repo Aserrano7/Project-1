@@ -15,7 +15,7 @@ var saveBtn = document.getElementById('saveButton');
 
 saveBtn.addEventListener('click', function (event) {
     // objectArray = [];
-    console.log("submit button clicked");
+  //  console.log("submit button clicked");
     event.preventDefault();
     videoContainer.classList.remove('hidden')
     var urlArray = [];
@@ -26,8 +26,8 @@ saveBtn.addEventListener('click', function (event) {
     var category = choice.value.split("-")[1];
     var selected = choice.value.split('-')[0];
 
-    console.log(category);
-    console.log(selected);
+   // console.log(category);
+   // console.log(selected);
 
     if (category === 'typeE') {
 
@@ -49,8 +49,8 @@ saveBtn.addEventListener('click', function (event) {
         })
         .then(function (data) {
             var display = document.getElementById('display');
-            console.log("Excercise API data:" + "\n-----");
-            console.log(data)
+          //  console.log("Excercise API data:" + "\n-----");
+           // console.log(data)
 
             for (let index = 0; index < data.length; index++) {
                 var name = document.createElement('div');
@@ -103,7 +103,7 @@ saveBtn.addEventListener('click', function (event) {
 
                 var url2 = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=' + data[index].name + '+' + data[index].type + '+' + data[index].muscle + '&type=video&key=' + youtubeApiKey;
                 urlArray.push(url2);
-                console.log(url)
+              //  console.log(url)
 
                 var favoritesList = document.getElementById('save-' + index);
                 favoritesList.addEventListener('click', createSaveHandler(index));
@@ -121,7 +121,7 @@ saveBtn.addEventListener('click', function (event) {
             // to do what is after the .then( . This ensures that every button will get a href link.
             Promise.all(requests).then(function (results) {
                 for (let index = 0; index < results.length; index++) {
-                      console.log(results[index]);
+                    //  console.log(results[index]);
                     var buttonElement = document.getElementById('btn-' + index);
                     var thumbnailImg = document.getElementById('img-' + index)
                     var item = results[index].items;
@@ -152,11 +152,11 @@ function createSaveHandler(index) {
         var urlList = document.getElementById('btn-' + index).href;
 
         if (favList.includes(urlList)) {
-            console.log('Video already exists in favorites.');
+          //  console.log('Video already exists in favorites.');
         } else {
             favList.push(urlList);
             localStorage.setItem('userFavorite', JSON.stringify(favList));
-            console.log('Favorites:', favList);
+           // console.log('Favorites:', favList);
             updateFavoritesList();
 
         }
