@@ -14,6 +14,7 @@ var saveBtn = document.getElementById('saveButton');
 
 
 saveBtn.addEventListener('click', function (event) {
+    // objectArray = [];
     console.log("submit button clicked");
     event.preventDefault();
     videoContainer.classList.remove('hidden')
@@ -102,6 +103,7 @@ saveBtn.addEventListener('click', function (event) {
 
                 var url2 = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=' + data[index].name + '+' + data[index].type + '+' + data[index].muscle + '&type=video&key=' + youtubeApiKey;
                 urlArray.push(url2);
+                console.log(url)
 
                 var favoritesList = document.getElementById('save-' + index);
                 favoritesList.addEventListener('click', createSaveHandler(index));
@@ -119,7 +121,7 @@ saveBtn.addEventListener('click', function (event) {
             // to do what is after the .then( . This ensures that every button will get a href link.
             Promise.all(requests).then(function (results) {
                 for (let index = 0; index < results.length; index++) {
-                    console.log(results[index]);
+                      console.log(results[index]);
                     var buttonElement = document.getElementById('btn-' + index);
                     var thumbnailImg = document.getElementById('img-' + index)
                     var item = results[index].items;
